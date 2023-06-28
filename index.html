@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interet simple</title>
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="clac-wrapper">
+      <div class="calc-content">
+        <h2> emprunt à intérêt simple</h2>
+        <form action="" id="calc-form">
+            <!--form item-->
+          <div class="form-item">
+            <div class="input-name">
+              <span>1</span>
+              <label for="loan-amount">Montant de l'emprunt</label>
+            </div>
+            <div class="input-control">
+                <span>(en FCFA)</span>
+                <input type="number" name="" id="loan-amount"
+                min="0" step="any" required placeholder="0" >
+            </div>
+          </div>
+        <!--end of form item-->
+
+        <!--form item-->
+        <div class="form-item">
+            <div class="input-name">
+                <span>2</span>
+                <label for="interest-rate">Taux d'interets</label>
+            </div>
+            <div class="input-control">
+                <span>(en %)</span>
+                <input type="number" name="" id="interest-rate" min="0" step="any" required placeholder="0">
+            </div>
+        </div>
+        <!--end of form item-->
+
+        <!--form item-->
+        <div class="form-item">
+            <div class="input-name">
+                <span>3</span>
+                <label for="no-of-month">nombre de mois</label>
+            </div>
+            <div class="input-control">
+                <span>(en mois)</span>
+                <input type="number" name="" id="no-of-month" min="0" step="any" required placeholder="0">
+            </div>
+        </div>
+        <!--end of form item-->
+
+        <div class="btns">
+            <input type="submit" id="calc-btn" value="Calculer">
+            <input type="submit" id="clear-btn" value="Effacer">
+        </div>
+        </form>
+      </div>
+      <div class="result-content">
+        <h2>Paiements mensuels</h2>
+        <div class="payment-info">
+            <div>
+                <h4>Montant de l'emprunt</h4>
+                <span></span>
+            </div>
+
+            <div>
+                <h4>Taux d'interets</h4>
+                <span></span>
+            </div>
+
+            <div>
+                <h4>Nombre de mois</h4>
+                <span></span>
+            </div>
+
+            <div>
+                <h4>Paiement mensuel</h4>
+                <span></span>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>
+ 
